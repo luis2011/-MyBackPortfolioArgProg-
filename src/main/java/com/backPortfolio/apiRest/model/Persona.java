@@ -3,10 +3,7 @@ package com.backPortfolio.apiRest.model;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 
 // 49:43
@@ -25,6 +22,12 @@ public class Persona {
     private String titulo;
     private String acercaDe;
     private String imagenDePerfil;
+
+
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "idDomicilio", referencedColumnName = "id")
+    private Domicilio domicilio;
 
     public Persona() {
 
