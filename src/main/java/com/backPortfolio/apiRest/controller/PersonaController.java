@@ -29,6 +29,12 @@ public class PersonaController {
   }
 
   @PreAuthorize("hasRole('ADMIN')")
+    @GetMapping ("persona/{id}")
+    public Persona buscarPersona(@PathVariable Long id){
+    return  persoServ.buscarPersona(id);
+  }
+
+
     @PostMapping ("/edit/persona")
     public void editarPersona(@RequestBody Persona pers){
         persoServ.editarPersona(pers);

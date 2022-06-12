@@ -55,11 +55,12 @@ public class MainSecurity extends WebSecurityConfigurerAdapter {
     }
 
     // "/producto/lista")
+    // "/persona/{?}"
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.cors().and().csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/auth/**")
+                .antMatchers("/auth/**", "/ver/persona" )
 
                 .permitAll()
                 .anyRequest().authenticated()
