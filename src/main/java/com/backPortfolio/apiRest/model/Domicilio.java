@@ -13,8 +13,8 @@ public class Domicilio implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column (name="ID_DOMICILIO")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column (name="id_domicilio")
     private long id_domicilio;
 
     private String direccion;
@@ -30,6 +30,7 @@ public class Domicilio implements Serializable {
     public Domicilio(){
 
     }
+
 
     public Domicilio(long id_domicilio, String direccion, String codigo_Postal, String localidad, String pais) {
         this.id_domicilio = id_domicilio;

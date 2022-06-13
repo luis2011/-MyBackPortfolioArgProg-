@@ -1,12 +1,9 @@
 package com.backPortfolio.apiRest.controller;
 
-import com.backPortfolio.apiRest.model.Domicilio;
 import com.backPortfolio.apiRest.service.IDomicilioService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin(origins = "*")
@@ -15,6 +12,7 @@ public class DomicilioControlller {
     @Autowired
     private IDomicilioService domServ;
 
+   /*
     @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/new/domicilio")
     public void agregarDomicilio(@RequestBody Domicilio dom){
@@ -38,4 +36,6 @@ public class DomicilioControlller {
     public void borrarDomicilio (@PathVariable Long id){
         domServ.borrarDomicilio(id);
     }
+    
+    */
 }

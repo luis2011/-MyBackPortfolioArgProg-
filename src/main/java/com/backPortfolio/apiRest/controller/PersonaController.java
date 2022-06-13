@@ -34,12 +34,11 @@ public class PersonaController {
     return  persoServ.buscarPersona(id);
   }
 
-
+  @PreAuthorize("hasRole('ADMIN')")
     @PostMapping ("/edit/persona")
     public void editarPersona(@RequestBody Persona pers){
         persoServ.editarPersona(pers);
     }
-
     @PreAuthorize("hasRole('ADMIN')")
   @DeleteMapping ("/delete/{id}")
   public void borrarPersona (@PathVariable Long id){

@@ -29,6 +29,7 @@ public class PersonaService implements IPersonaService {
         persoRepo.save(per);
     }
 
+
     @Override
     public void borrarPersona(Long id) {
         persoRepo.deleteById(id);
