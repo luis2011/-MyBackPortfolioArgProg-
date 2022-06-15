@@ -28,7 +28,7 @@ public class SkillController {
      }
 
      @PreAuthorize("hasRole('ADMIN')")
-     @GetMapping ("skill/{id}")
+     @GetMapping ("/skill/{id}")
      public Skill buscarSkill(@PathVariable Long id){
         return skillServ.buscarSkill(id);
      }

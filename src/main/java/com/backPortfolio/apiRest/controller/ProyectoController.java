@@ -28,7 +28,7 @@ public class ProyectoController {
      }
 
      @PreAuthorize("hasRole('ADMIN')")
-     @GetMapping ("proyecto/{id}")
+     @GetMapping ("/proyecto/{id}")
      public Proyecto buscarProyecto(@PathVariable Long id){
         return proyServ.buscarProyecto(id);
      }
