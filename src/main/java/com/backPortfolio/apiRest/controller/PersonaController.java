@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 // explicacion 1:30 relacion entre todas las capas
 @RestController
 @CrossOrigin(origins = "*")
@@ -24,9 +23,14 @@ public class PersonaController {
 
   @GetMapping ("/ver/persona")
   @ResponseBody
-    public List<Persona> verPersonas (){
-        return persoServ.verPersonas();
+    //public List<Persona> verPersonas (){
+        //return persoServ.verPersonas();
+  //}
+  public String ver(){
+    return "test ";
   }
+
+
 
   @PreAuthorize("hasRole('ADMIN')")
     @GetMapping ("persona/{id}")
