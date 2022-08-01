@@ -1,6 +1,6 @@
 package com.backPortfolio.apiRest.controller;
 
-import com.backPortfolio.apiRest.service.IDomicilioService;
+import com.backPortfolio.apiRest.security.service.IDomicilioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RestController;

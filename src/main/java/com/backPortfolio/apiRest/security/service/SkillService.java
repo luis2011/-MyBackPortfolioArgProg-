@@ -1,4 +1,4 @@
-package com.backPortfolio.apiRest.service;
+package com.backPortfolio.apiRest.security.service;
 
 import com.backPortfolio.apiRest.model.Skill;
 import com.backPortfolio.apiRest.repository.ISkillRepository;

@@ -1,7 +1,7 @@
 package com.backPortfolio.apiRest.controller;
 
 import com.backPortfolio.apiRest.model.Skill;
-import com.backPortfolio.apiRest.service.ISkillService;
+import com.backPortfolio.apiRest.security.service.ISkillService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;

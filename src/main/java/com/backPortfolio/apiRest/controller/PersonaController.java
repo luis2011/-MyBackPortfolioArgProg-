@@ -2,7 +2,7 @@ package com.backPortfolio.apiRest.controller;
 
 
 import com.backPortfolio.apiRest.model.Persona;
-import com.backPortfolio.apiRest.service.IPersonaService;
+import com.backPortfolio.apiRest.security.service.IPersonaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
